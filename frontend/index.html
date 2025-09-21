@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Legal Assistant - Document Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="AI-powered legal document analyzer and Q&A assistant">
+</head>
+<body>
+    <div class="x">
+        <header>
+            <h1><i class="fas fa-balance-scale"></i> AI Legal Assistant</h1>
+            <p>Transform Complex Legal Documents into Clear, Actionable Insights</p>
+            <div class="header-features">
+                <span><i class="fas fa-robot"></i> AI-Powered Analysis</span>
+                <span><i class="fas fa-search"></i> Intelligent Q&A</span>
+                <span><i class="fas fa-shield-alt"></i> Risk Assessment</span>
+                <span><i class="fas fa-key"></i> Key Terms Extraction</span>
+            </div>
+        </header>
+        
+        <div class="project-description">
+            <div class="description-content">
+                <h3>How It Works</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Upload Document</h4>
+                            <p>Upload any legal document (PDF, DOC, DOCX, TXT)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>AI Analysis</h4>
+                            <p>Advanced AI analyzes content and identifies key information</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Get Insights</h4>
+                            <p>Receive comprehensive analysis and ask any questions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="capabilities">
+                    <h4>What You Get:</h4>
+                    <ul>
+                        <li><strong>Document Classification:</strong> Automatic identification of contract types</li>
+                        <li><strong>Comprehensive Summary:</strong> Clear overview of document contents</li>
+                        <li><strong>Risk Assessment:</strong> Identification of potential legal risks and red flags</li>
+                        <li><strong>Key Terms:</strong> Important legal terminology explained</li>
+                        <li><strong>Party Analysis:</strong> Identification of all involved parties and roles</li>
+                        <li><strong>Financial Terms:</strong> Monetary amounts and payment obligations</li>
+                        <li><strong>Interactive Q&A:</strong> Ask questions in natural language</li>
+                        <li><strong>Smart Suggestions:</strong> Document-specific question prompts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="y">
+            <div class="z" id="z">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Upload Legal Document</h3>
+                <p>Drag & drop your document here or click to browse</p>
+                <p class="file-info">Supported formats: PDF, DOC, DOCX, TXT (Max 50MB)</p>
+                <input type="file" id="f" accept=".pdf,.txt,.doc,.docx" hidden>
+                <button class="b" onclick="document.getElementById('f').click()">
+                    <i class="fas fa-folder-open"></i> Browse Files
+                </button>
+            </div>
+            
+            <div class="p" id="pc" style="display: none;">
+                <div class="pb">
+                    <div class="pf" id="pf"></div>
+                </div>
+                <span class="pt" id="pt">0%</span>
+            </div>
+        </div>
+        
+        <div class="a" id="as" style="display: none;">
+            <div class="s">
+                <h3><i class="fas fa-file-contract"></i> Document Analysis</h3>
+                <div class="sc" id="sc"></div>
+            </div>
+            
+            <div class="r">
+                <h3><i class="fas fa-exclamation-triangle"></i> Risk Assessment</h3>
+                <div class="rc" id="rc"></div>
+            </div>
+            
+            <div class="q">
+                <h3><i class="fas fa-comments"></i> AI Assistant</h3>
+                <div class="ch" id="ch"></div>
+                <div class="ig">
+                    <input type="text" id="qi" placeholder="Ask any question about your document..." maxlength="500">
+                    <button id="ab" title="Send Question">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="suggestions">
+                    <p><strong>Try asking:</strong></p>
+                    <div class="suggestion-buttons">
+                        <button class="suggestion-btn" onclick="document.getElementById('qi').value='What are the main obligations of each party?'">Main Obligations</button>
+                        <button class="suggestion-btn" onclick="document.getElementById('qi').value='What are the payment terms?'">Payment Terms</button>
+                        <button class="suggestion-btn" onclick="document.getElementById('qi').value='When does this agreement expire?'">Expiration Date</button>
+                        <button class="suggestion-btn" onclick="document.getElementById('qi').value='What happens if someone breaches the contract?'">Breach Consequences</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="l" id="l" style="display: none;">
+            <div class="sp"></div>
+            <p>Analyzing your document with AI...</p>
+            <small>This may take a few moments</small>
+        </div>
+    </div>
+    
+    <footer style="text-align: center; padding: 20px; color: #718096; background: #f7fafc; margin-top: 50px;">
+        <p>&copy; 2024 AI Legal Assistant. Powered by Gemini AI.</p>
+        <p><small>For informational purposes only. Not a substitute for professional legal advice.</small></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

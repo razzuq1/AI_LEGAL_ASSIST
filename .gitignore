@@ -1,0 +1,43 @@
+# Virtual Environments
+.venv/
+backend/.venv/
+venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Project specific
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/data/*
+!backend/data/.gitkeep
+*.env
+.env
+
+# Large files
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.zip
+*.rar
+*.tar.gz
