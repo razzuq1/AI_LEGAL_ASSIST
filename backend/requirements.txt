@@ -1,0 +1,37 @@
+# Core Flask packages - stable versions
+Flask==2.3.3
+Flask-CORS==4.0.0
+Werkzeug==2.3.7
+
+# Environment management
+python-dotenv==1.0.0
+
+# Document processing - tested versions
+PyPDF2==3.0.1
+python-docx==0.8.11
+
+# Google Gemini AI - latest stable
+google-generativeai==0.3.2
+
+# Text processing and embeddings - compatible versions
+sentence-transformers==2.2.2
+
+# LangChain - minimal required
+langchain==0.0.335
+langchain-text-splitters==0.0.1
+
+# Vector storage - available version
+faiss-cpu==1.8.0
+
+# Core utilities - stable versions  
+numpy==1.24.4
+pandas==2.0.3
+requests==2.31.0
+
+# Optional: Production server
+gunicorn==21.2.0
+
+# Alternative lightweight versions (if above fail)
+# sentence-transformers==2.1.0
+# numpy==1.23.5
+# pandas==1.5.3
